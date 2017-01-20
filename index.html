@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Note with Authentication</title>
+  <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.css'>
+</head>
+<body>
+  <div ng-app='noteAuthent'>
+      <nav class="navbar navbar-default">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <a class="navbar-brand" href="#/register">Register</a>
+         </div>
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#/login">Login</a></li>
+           <li class="active"><a href="#/new">New Notes</a></li>
+           <li class="active"><a href="#/notes">Notes</a></li>
+         </ul>
+       </div>
+     </nav>
+
+  <dvi ng-view></dvi>
+
+
+  </div>
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/lib/angular/angular.min.js"></script>
+  <script src="/lib/angular-route/angular-route.min.js"></script>
+  <script src="/main.js"></script>
+  <script src="/config.js"></script>
+  <script src="/controllers/login.js"></script>
+  <script src="/controllers/newNote.js"></script>
+  <script src="/controllers/noteList.js"></script>
+  <script src="/controllers/register.js"></script>
+</body>
+</html>

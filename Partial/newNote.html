@@ -1,0 +1,12 @@
+
+<form>
+ <div class="form-group">
+   <lable for="usr">Note Name</lable>
+   <input ng-model="noteName" type="text" class="form-control" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="text">Note Text</label>
+    <textarea ng-model="noteText"></textarea>
+  </div>
+  <button ng-click="newNote()" class="btn bnt-default" type="submit">New Note</button>
+</form>
