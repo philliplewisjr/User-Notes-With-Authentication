@@ -1,12 +1,23 @@
 
 <form>
  <div class="form-group">
-   <lable for="usr">Note Name</lable>
-   <input ng-model="noteName" type="text" class="form-control" id="usr">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+         <lable for="usr">Note Title:</lable>
+         <input ng-model="noteName" name="notes" type="text" class="form-control" id="usr">
+        </div>
+      </div>
+    </div>
   </div>
   <div class="form-group">
-    <label for="text">Note Text</label>
-    <textarea ng-model="noteText"></textarea>
+    <div class="container">
+       <div class="row">
+          <label for="text">Note Text:</label>
+          <textarea class="form-control" name="notes" ng-model="noteText" id="exampleTextarea" rows="3"></textarea>
+          <button ng-click="newNote()" class="btn bnt-default" type="submit">New Note</button>
+       </div>
+    </div>
   </div>
-  <button ng-click="newNote()" class="btn bnt-default" type="submit">New Note</button>
+  
 </form>
